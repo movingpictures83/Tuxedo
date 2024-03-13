@@ -1,0 +1,3 @@
+estimate	true
+gtffile	GTF/stringtie_merged.gtf
+bamfile	BAM/S12_R1.bam

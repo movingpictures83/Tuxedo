@@ -1,0 +1,14 @@
+Prefix pipelines/Tuxedo/
+#Plugin HISAT2 inputfile Parameters/parameters.hisat2.fastq1.txt outputfile SAM/S12_R1.sam
+#Plugin HISAT2 inputfile Parameters/parameters.hisat2.fastq2.txt outputfile SAM/S12_R2.sam
+#Plugin SAM2BAM inputfile SAM/S12_R1.sam outputfile BAM/S12_R1.bam
+#Plugin SAM2BAM inputfile SAM/S12_R2.sam outputfile BAM/S12_R2.bam
+
+#Plugin StringTie inputfile Parameters/parameters.stringtie.assemble.fastq1.txt outputfile GTF/S12_R1.gtf
+#Plugin StringTie inputfile Parameters/parameters.stringtie.assemble.fastq2.txt outputfile GTF/S12_R2.gtf
+#Plugin StringTie inputfile Parameters/parameters.stringtie.merge.txt outputfile GTF/stringtie_merged.gtf
+Plugin StringTie inputfile Parameters/parameters.stringtie.estimate.fastq1.txt outputfile Counts/S12_R1/S12_R1.gtf
+Plugin StringTie inputfile Parameters/parameters.stringtie.estimate.fastq2.txt outputfile Counts/S12_R2/S12_R2.gtf
+
+Plugin DESeqHetero inputfile Counts/ outputfile Results/
+Plugin RNAAnnotate inputfile Parameters/parameters.rnaannotate.txt outputfile Results/gene_annot.csv

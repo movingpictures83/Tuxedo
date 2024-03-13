@@ -1,0 +1,2 @@
+gtffile	GTF/stringtie_merged.gtf
+csvfile	Results/gene_count_matrix.csv

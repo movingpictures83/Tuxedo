@@ -1,0 +1,2 @@
+database	/biorg/data/DB/grch38_snp_tran/genome_snp_tran
+fastq	FASTQ/S12_R2.fastq

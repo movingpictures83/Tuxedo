@@ -1,0 +1,2 @@
+pipelines/Tuxedo/GTF/S12_R1.gtf
+pipelines/Tuxedo/GTF/S12_R2.gtf

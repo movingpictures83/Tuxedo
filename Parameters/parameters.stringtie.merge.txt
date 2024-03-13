@@ -1,0 +1,3 @@
+merge	true
+gfffile	Homo_sapiens.GRCh38.87.gff3
+txtfile	mergelist.txt
